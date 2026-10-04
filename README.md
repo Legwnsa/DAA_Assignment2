@@ -26,10 +26,10 @@ All benchmarks were evaluated for sizes N in {100, 1000, 10000, 100000} using me
 
 | Workload | Executable Plot | Primary Finding |
 |
-| W1: Random Access | `results/plots/W1_RandomAccess.png` | `DynamicArray` takes <1text{ ms} due to direct pointer math, whereas `MyLinkedList` scales linearly up to 300+text{ ms}. |
-| W2: Linear Search | `results/plots/W2_Search.png` | `DynamicArray` outperforms `MyLinkedList` by 3times due to CPU L1/L2 cache locality and absence of pointer chasing. |
-| W3: Insert/Remove | `results/plots/W3_InsertRemove.png` | `MyLinkedList` at head runs in O(1) time (0text{ ms}), but middle operations scale up to 120text{ ms}. |
-| W4: Priority Queue | `results/plots/W4_PriorityProcessing.png` | `MinHeap` handles 100,000 priority operations smoothly in sim10text{ ms} thanks to O(log N) tree depth. |
+| W1: Random Access | `results/plots/W1.png` | `DynamicArray` takes <1text{ ms} due to direct pointer math, whereas `MyLinkedList` scales linearly up to 300+text{ ms}. |
+| W2: Linear Search | `results/plots/W2.png` | `DynamicArray` outperforms `MyLinkedList` by 3times due to CPU L1/L2 cache locality and absence of pointer chasing. |
+| W3: Insert/Remove | `results/plots/W3.png` | `MyLinkedList` at head runs in O(1) time (0text{ ms}), but middle operations scale up to 120text{ ms}. |
+| W4: Priority Queue | `results/plots/W4.png` | `MinHeap` handles 100,000 priority operations smoothly in sim10text{ ms} thanks to O(log N) tree depth. |
 ------------------------------------------------------
 Repository Structure
 -results/
